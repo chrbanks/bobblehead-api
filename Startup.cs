@@ -1,11 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using BobbleheadApi.Models;
+using BobbleheadApi.Repositories;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
-using Microsoft.Data.Entity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -30,6 +25,7 @@ namespace BobbleheadApi
         {
             // Add framework services.
             services.AddMvc();
+            services.AddScoped<IBobbleheadRepository, BobbleheadRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
