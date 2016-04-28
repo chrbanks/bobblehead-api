@@ -4,8 +4,6 @@ namespace BobbleheadApi.Models
     using Microsoft.Data.Entity;
     using Microsoft.Extensions.PlatformAbstractions;
 
-
-    // >dnx . ef migrations add bobbleheadMigration
     public class BobbleheadContext : DbContext
     {
         public DbSet<Bobblehead> Bobbleheads { get; set; }
