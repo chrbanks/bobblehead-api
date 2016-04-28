@@ -1,4 +1,6 @@
+To run this you need to have dnvm and dnx installed.
 
+Target framework dnxcore50
 
 
 Postman collection:
